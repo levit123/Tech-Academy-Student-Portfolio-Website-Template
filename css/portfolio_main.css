@@ -1,0 +1,104 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
+}
+
+.portfolio-section-header{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 16pt;
+	text-align: center;
+}
+
+/*customized the Bootstrap navbar*/
+#portfolio-nav {
+	overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+	position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
+	top: 0; /* This ensures no space is displayed above the navbar */
+	width: 100%; /* This makes the navbar span the entire width of the page */
+	z-index: 1; /*This ensures other elements don't display over the navbar */
+	font-family: 'Press Start 2P', cursive;
+	border-style: groove;
+	border-width: 3px;
+}
+
+/*navbar hover effect*/
+#portfolio-nav a:hover {
+	background-color: darkgray;
+	box-shadow: -6px 6px 10px #333333; /* adds a drop shadow to each element of the navbar when the cursor hovers over it */
+	cursor: pointer;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+/*styling for the div container holding the image at the top of the webpage*/
+#heading {
+	text-align: center;
+	padding-top: 80px;
+}
+
+/*styling for the image at the top of the webpage*/
+#title-image {
+	height: 20%;
+	width: 20%;
+	border-style: groove;
+	border-width: 3px;
+	border-radius: 10px;
+	border-color: darkgray;
+}
+
+/*styling for the text throughout the website*/
+#portfolio-text {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 11pt;
+	line-height: 20pt;
+	margin-right: 40px;
+	margin-left: 40px;
+	text-align: center;
+}
+
+/*div that acts as a visual box to hold parts of the elements of the webpage*/
+.box {
+	background-color: lightgray;
+	padding: 10px;
+	align-content: center;
+	border-style: groove;
+	border-width: 3px;
+	border-radius: 10px;
+	border-color: darkgray;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*styling for the Github images*/
+.logo-image1 {
+	height: 20%;
+	width: 20%;
+	border-style: groove;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: lightgray;
+}
+
+/*effect when user hovers mouse over the Discography images*/
+.logo-image1:hover {
+	width: 25%;
+	height: 25%;
+	-webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+/*custom span classes that serves as line breaks with a specific height*/
+.break1 {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.break2 {
+	display: block;
+	margin-bottom: 30px;
+}

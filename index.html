@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Student Name - Programming Portfolio</title>
+    <!--references to the CSS documents for the website. I named the primary CSS file as "portfolio_main.css" in case we decide to split the CSS into multiple files-->
+    <link rel="stylesheet" type="text/css" href="css/portfolio_main.css">
+    <!--website javascript-->
+    <script src="js/portfolio.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--reference to 8 bit font for its use in the website-->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="portfolio-nav">
+	  <div class="container">
+	    <a class="navbar-brand" href="#home">Home</a>
+	    <a class="navbar-brand" href="#about">About</a>
+	    <a class="navbar-brand" href="#github">Github</a>
+	    <a class="navbar-brand" href="#linkedin">LinkedIn</a>
+	  </div>
+	</nav>
+
+	<!--HEADER-->
+	<section id="home">
+		<div id="heading">
+			<img src="images/picture_of_me.jpg" id="title-image">
+		</div>
+	</section>
+	<!--END OF HEADER-->
+
+	<br>
+
+	<!--ABOUT-->
+	<section id="about">
+		<h3 class="portfolio-section-header">About Me</h3>
+		<div class="box">
+			<p id="portfolio-text">My name is (insert name here) and I am a junior software developer, and graduate of The Tech Academy, one of the most well-reviewed coding bootcamps today.
+				<span class="break1"></span>
+				
+				<span class="break1"></span>
+				I'm skilled in using HTML, CSS, and Javascript to develop webpages and add extended functionality to them. In addition, I have training in C# and the .NET Framework. You can find some of my coding projects on Github. You can also find my prior work history and education background, as well as other info, on my LinkedIn. Feel free to view my info through the links below.
+			</p>
+		</div>
+	</section>
+	<!--END OF ABOUT-->
+
+	<br>
+
+	<!--GITHUB-->
+	<section id="github">
+		<h3 class="portfolio-section-header">Github</h3>
+		<div class="box">
+			<p id="portfolio-text">Having graduated from the Tech Academy, I have an array of programming projects in a variety of language, avaialable for downloading from my Github.
+				<span class="break2"></span>
+				Take a look at some of my work.
+				<span class="break2"></span>
+				<!--image that, when clicked, calls the function to open the link to your Github page in a new tab-->
+				<img src="images/github_logo.png" class="logo-image1" onclick="OpenGithub()">
+			</p>
+		</div>
+	</section>
+	<!--END OF DISCOGRAPHY-->
+
+	<section id="linkedin">
+		<h3 class="portfolio-section-header">LinkedIn</h3>
+		<div class="box">
+			<p id="portfolio-text">You can learn more about my education history, including my time at The Tech Academy, and my general work experience and skills from my LinkedIn profile.
+				<span class="break2"></span>
+				Feel free to take a look.
+				<span class="break2"></span>
+				<img src="images/linkedin_logo.png" class="logo-image1" onclick="OpenLinkedIn()">
+			</p>
+		</div>
+	</section>
+
+
+	<!--CONTACT-->
+	<section id="contact">
+		<h3 class="portfolio-section-header">Contact</h3>
+		<div class="box">
+			<p id="portfolio-text">Looking for a beat to use for a song? Want to collaborate on a music project? Or just have general questions? Send me an email using the form below!</p>
+			<!--contact form-->
+			<form method="post" name="contactform" action="contact-form-handler.php">
+				Your Name (Artist name is fine too)
+				<input type="text" name="name">
+
+				Email Address
+				<input type="text" name="email">
+
+				Message
+				<textarea name="message"></textarea>
+
+				<input type="submit" Value="Submit">
+			</form>
+
+			<!--form validation script-->
+			<script language="JavaScript">
+				var frmvalidator  = new Validator("contactform");
+				frmvalidator.addValidation("name","req","Please provide your name");
+				frmvalidator.addValidation("email","req","Please provide your email");
+				frmvalidator.addValidation("email","email", "Please enter a valid email address");
+			</script>
+		</div>
+	</section>
+</body>
+</html>
