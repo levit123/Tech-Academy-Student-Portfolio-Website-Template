@@ -13,8 +13,7 @@ body {
 }
 
 /*customized the Bootstrap navbar*/
-#portfolio-nav {
-	overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+#portfolio-nav { 
 	position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
 	top: 0; /* This ensures no space is displayed above the navbar */
 	width: 100%; /* This makes the navbar span the entire width of the page */
@@ -23,14 +22,16 @@ body {
 	border-style: groove;
 	border-width: 3px;
 }
-
+/* New Stuff */
+#portfolio-nav a:active{
+	transform: rotate(15deg);
+	animation-duration: 0ms;
+}
 /*navbar hover effect*/
-#portfolio-nav a:hover {
-	background-color: darkgray;
-	box-shadow: -6px 6px 10px #333333; /* adds a drop shadow to each element of the navbar when the cursor hovers over it */
+#portfolio-nav a:hover {/* adds a drop shadow to each element of the navbar when the cursor hovers over it */
 	cursor: pointer;
     -webkit-transition-duration: 1s;
-    transition-duration: 1s;
+	transition-duration: 1s;
 }
 
 /*styling for the div container holding the image at the top of the webpage*/
@@ -101,4 +102,53 @@ body {
 .break2 {
 	display: block;
 	margin-bottom: 30px;
+}
+/* --------------NEW STUFF ADDED HERE---------------------------- */
+.Menu{
+    font: bold 12px/ 18px sans-serif; /*what is the purpose of this? */
+    text-align: center;
+    list-style: none;
+    margin: 10%;
+    display: inline;
+    margin: 0;
+}
+
+.Menu li{
+    color: #B3B3B3;
+    display: inline-block;
+    position: relative;
+    padding: 12px 40px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.Menu li:hover{
+    color: #fff;
+}
+
+.Menu li:hover ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.subMenu {
+    padding: 0;
+    left: 0;
+    position: absolute;
+    top: 43.5px;
+    width: 125.5px;
+    opacity: 0;
+	visibility: hidden;
+	border-radius: 2px;
+}
+
+.subMenu li{
+    background-color: #343a40;
+    display: block;
+    color: #B3B3B3;
+}
+
+.subMenu li:hover{
+    color: #fff;
 }

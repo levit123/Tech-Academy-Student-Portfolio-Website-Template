@@ -9,3 +9,4 @@ function OpenGithub() {
 function OpenLinkedIn() {
 	window.open("https://www.linkedin.com/in/levi-blodgett-software/");
 }
+
