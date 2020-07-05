@@ -1,3 +1,5 @@
+/*general styling for the overall webpages*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,14 +8,17 @@ body {
 	margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
 }
 
+/*styling for the <h3> elements with this class*/
+
 .portfolio-section-header{
-	font-family: 'Press Start 2P', cursive;
-	font-size: 16pt;
+	font: bold 18px sans-serif;
+	font-size: 1.50rem;
 	text-align: center;
 }
 
 /*customized the Bootstrap navbar*/
-#portfolio-nav { 
+#portfolio-nav {
+	overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
 	position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
 	top: 0; /* This ensures no space is displayed above the navbar */
 	width: 100%; /* This makes the navbar span the entire width of the page */
@@ -22,38 +27,49 @@ body {
 	border-style: groove;
 	border-width: 3px;
 }
-/* New Stuff */
-#portfolio-nav a:active{
+
+/*navbar hover effect*/
+#portfolio-nav a:hover {
+	background-color: darkgray;
+	box-shadow: -6px 6px 10px #333333; /* adds a drop shadow to each element of the navbar when the cursor hovers over it */
+}
+/*styling for the navbar*/
+.portfolio-nav { 
+	color: #212529;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: .5rem 1rem;
+	background-color: #343a40;
+}
+
+/*styling for the click-able anchor elements in the navbar*/
+.portfolio-nav a {
+	font: bold 18px sans-serif;
+	text-decoration: none;
+	background-color: transparent;
+	display: inline-block;
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	color: #fff;
+}
+/*Navbar anchor item animation when mouse is clicked and held down*/
+.portfolio-nav a:active{
 	transform: rotate(15deg);
 	animation-duration: 0ms;
 }
 /*navbar hover effect*/
-#portfolio-nav a:hover {/* adds a drop shadow to each element of the navbar when the cursor hovers over it */
+.portfolio-nav a:hover {/* adds a drop shadow to each element of the navbar when the cursor hovers over it */
 	cursor: pointer;
     -webkit-transition-duration: 1s;
-	transition-duration: 1s;
-}
-
-/*styling for the div container holding the image at the top of the webpage*/
-#heading {
-	text-align: center;
-	padding-top: 80px;
-}
-
-/*styling for the image at the top of the webpage*/
-#title-image {
-	height: 20%;
-	width: 20%;
-	border-style: groove;
-	border-width: 3px;
-	border-radius: 10px;
-	border-color: darkgray;
+    transition-duration: 1s;
 }
 
 /*styling for the text throughout the website*/
 #portfolio-text {
-	font-family: 'Press Start 2P', cursive;
-	font-size: 11pt;
+	font-size: 14pt;
 	line-height: 20pt;
 	margin-right: 40px;
 	margin-left: 40px;
@@ -73,24 +89,6 @@ body {
 	margin-right: 20px;
 	margin-top: 30px;
 	margin-bottom: 30px;
-}
-
-/*styling for the Github images*/
-.logo-image1 {
-	height: 20%;
-	width: 20%;
-	border-style: groove;
-	border-width: 5px;
-	border-radius: 10px;
-	border-color: lightgray;
-}
-
-/*effect when user hovers mouse over the Discography images*/
-.logo-image1:hover {
-	width: 25%;
-	height: 25%;
-	-webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
 }
 
 /*custom span classes that serves as line breaks with a specific height*/
@@ -153,6 +151,9 @@ body {
     color: #fff;
 }
 
+/*IMAGE-RELATED STYLING SECTION*/
+/*===============================================================================================================*/
+
 .photo {
 	position: relative;
 	line-height: 0;
@@ -178,6 +179,51 @@ body {
 	height: 169px;
 }
 
+/*styling for the div container holding the image at the top of the webpage*/
+#heading {
+	text-align: center;
+	padding-top: 80px;
+}
+
+/*styling for the image at the top of the webpage*/
+#title-image {
+	height: 20%;
+	width: 20%;
+	border-style: groove;
+	border-width: 3px;
+	border-radius: 10px;
+	border-color: darkgray;
+}
+
+/*styling for the container that will hold all the images in the projects section in a horizontal row*/
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+/*styling for the Github images*/
+.logo-image1 {
+	height: 20%;
+	width: 20%;
+	border-style: groove;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: lightgray;
+}
+
+/*effect when user hovers mouse over the Github images*/
+.logo-image1:hover {
+	width: 25%;
+	height: 25%;
+	-webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
 .photo-overlay {
 	color: #fff;
 	position: absolute;
@@ -190,6 +236,41 @@ body {
 	justify-content: center; /* For centering text inside .photo-overlay */
 	align-items: center;
 	background: rgba(0,0,0, .5);
+}
+
+/*END OF IMAGE STYLING SECTION*/
+/*===============================================================================================================*/
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+@media (min-width:576px) {
+	.container {
+		max-width: 540px
+	}
+}
+
+@media (min-width:768px) {
+	.container {
+		max-width: 720px
+	}
+}
+
+@media (min-width:992px) {
+	.container {
+		max-width: 960px
+	}
+}
+
+@media (min-width:1200px) {
+	.container {
+		max-width: 1140px
+	}
 }
 
 .white-head {
