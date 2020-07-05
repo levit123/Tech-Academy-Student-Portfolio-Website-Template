@@ -44,6 +44,7 @@ body {
 	background-color: #343a40;
 }
 
+<<<<<<< Updated upstream
 /*styling for the click-able anchor elements in the navbar*/
 .portfolio-nav a {
 	font: bold 18px sans-serif;
@@ -67,6 +68,162 @@ body {
 	cursor: pointer;
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
+=======
+/*styling for the div container holding the image at the top of the webpage*/
+#Slideshow {
+	text-align: center;
+	padding-top: 80px;
+}
+
+/* Slideshow Styling */
+#Slideshow_Background {
+    /* This creates a slightly transparent white background that's placed over the video */
+    background: rgba(255,255,255, 0.35);
+}
+
+.mySlides {
+    display: none;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Fading animation for slideshow */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Slideshow section / container */
+#Slideshow_Container {
+    width: 39.5vw;
+    height: auto;
+    padding-top: 20%;
+    position: relative;
+    margin: auto;
+}
+
+/* Images contained within slideshow */
+.Slide_Show_Images {
+    vertical-align: middle;
+    height: auto;
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
+    width: auto;
+}
+
+
+/* Next and previous buttons */
+.Previous, .Next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: -0vw;
+    color: darkgray;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+/* Positioning the right-hand next button */
+.Next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Hover effect on slide show buttons */
+.Previous:hover, .Next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* Slideshow text */
+.text {
+    color: white;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0.75);
+    font-weight: bold;
+    border-radius: 7px 7px 7px 7px;
+}
+
+/* Number text (1/6, 2/6, etc.) - we have set this display to none, which means these are hidden */
+.Slide_Number {
+    color: white;
+    position: absolute;
+    top: 0;
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: none;
+}
+
+/* The dots under the slideshow */
+.dot {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    margin: .25vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover effect for slideshow dots */
+.active, .dot:hover {
+    background-color: black;
+}
+
+/* Fading animation for slideshow */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/*styling for the image at the top of the webpage*/
+#title-image {
+	height: 20%;
+	width: 20%;
+	border-style: groove;
+	border-width: 3px;
+	border-radius: 10px;
+	border-color: darkgray;
+>>>>>>> Stashed changes
 }
 
 /*styling for the text throughout the website*/
