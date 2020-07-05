@@ -7,13 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/portfolio_main.css">
     <!--website javascript-->
     <script src="js/portfolio.js"></script>
-    <!--bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--reference to 8 bit font for its use in the website-->
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 	<!--NAVBAR-->
+<<<<<<< Updated upstream
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="portfolio-nav">
 	  <div class="container">
 	    <a class="navbar-brand" href="#home">Home</a>
@@ -22,6 +19,24 @@
 	    <a class="navbar-brand" href="#linkedin">LinkedIn</a>
 	  </div>
 	</nav>
+=======
+	<nav class="portfolio-nav">
+        <div class="container">
+	        <ul class="Menu">
+		    	<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">About Me</a></li>
+					<li><a href="linkedin.html">LinkedIn</a></li>
+					<li><a href="github.html">Github</a></li>
+					<li><a href="myProjects.html">Projects</a>
+					<ul class="subMenu">
+						<li>Live Projects</li>
+					</ul>
+				</li>
+	        </ul>
+    	</div>
+    </nav>
+    <!--END OF NAVBAR-->
+>>>>>>> Stashed changes
 
 	<!--HEADER-->
 	<section id="home">
@@ -81,10 +96,10 @@
 	<section id="contact">
 		<h3 class="portfolio-section-header">Contact</h3>
 		<div class="box">
-			<p id="portfolio-text">Looking for a beat to use for a song? Want to collaborate on a music project? Or just have general questions? Send me an email using the form below!</p>
+			<p id="portfolio-text">If you're interested in hiring me, working on a collaborative programming project, or just have general questions, feel free to fill out the form below.</p>
 			<!--contact form-->
-			<form method="post" name="contactform" action="contact-form-handler.php">
-				Your Name (Artist name is fine too)
+			<form method="post" name="contactform">
+				Your Name
 				<input type="text" name="name">
 
 				Email Address
@@ -95,15 +110,8 @@
 
 				<input type="submit" Value="Submit">
 			</form>
-
-			<!--form validation script-->
-			<script language="JavaScript">
-				var frmvalidator  = new Validator("contactform");
-				frmvalidator.addValidation("name","req","Please provide your name");
-				frmvalidator.addValidation("email","req","Please provide your email");
-				frmvalidator.addValidation("email","email", "Please enter a valid email address");
-			</script>
 		</div>
 	</section>
+	<!--END OF CONTACT-->
 </body>
 </html>
