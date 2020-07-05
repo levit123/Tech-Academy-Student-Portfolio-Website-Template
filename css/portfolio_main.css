@@ -1,5 +1,3 @@
-/*general styling for the overall webpages*/
-
 html {
     scroll-behavior: smooth;
 }
@@ -8,18 +6,14 @@ body {
 	margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
 }
 
-/*styling for the <h3> elements with this class*/
-
 .portfolio-section-header{
-	font: bold 18px sans-serif;
-	font-size: 1.50rem;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 16pt;
 	text-align: center;
 }
 
-<<<<<<< Updated upstream
 /*customized the Bootstrap navbar*/
-#portfolio-nav {
-	overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+#portfolio-nav { 
 	position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
 	top: 0; /* This ensures no space is displayed above the navbar */
 	width: 100%; /* This makes the navbar span the entire width of the page */
@@ -28,191 +22,22 @@ body {
 	border-style: groove;
 	border-width: 3px;
 }
-
-/*navbar hover effect*/
-#portfolio-nav a:hover {
-	background-color: darkgray;
-	box-shadow: -6px 6px 10px #333333; /* adds a drop shadow to each element of the navbar when the cursor hovers over it */
-=======
-/*styling for the navbar*/
-.portfolio-nav { 
-	color: #212529;
-	position: relative;
-	display: flex;
-	align-items: center;
-	padding: .5rem 1rem;
-	background-color: #343a40;
-}
-
-<<<<<<< Updated upstream
-/*styling for the click-able anchor elements in the navbar*/
-.portfolio-nav a {
-	font: bold 18px sans-serif;
-	text-decoration: none;
-	background-color: transparent;
-	display: inline-block;
-	padding-top: .3125rem;
-	padding-bottom: .3125rem;
-	margin-right: 1rem;
-	font-size: 1.25rem;
-	color: #fff;
-}
-/*Navbar anchor item animation when mouse is clicked and held down*/
-.portfolio-nav a:active{
+/* New Stuff */
+#portfolio-nav a:active{
 	transform: rotate(15deg);
 	animation-duration: 0ms;
 }
 /*navbar hover effect*/
-.portfolio-nav a:hover {/* adds a drop shadow to each element of the navbar when the cursor hovers over it */
->>>>>>> Stashed changes
+#portfolio-nav a:hover {/* adds a drop shadow to each element of the navbar when the cursor hovers over it */
 	cursor: pointer;
     -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-=======
+	transition-duration: 1s;
+}
+
 /*styling for the div container holding the image at the top of the webpage*/
-#Slideshow {
+#heading {
 	text-align: center;
 	padding-top: 80px;
-}
-
-/* Slideshow Styling */
-#Slideshow_Background {
-    /* This creates a slightly transparent white background that's placed over the video */
-    background: rgba(255,255,255, 0.35);
-}
-
-.mySlides {
-    display: none;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/* Fading animation for slideshow */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-/* Slideshow section / container */
-#Slideshow_Container {
-    width: 39.5vw;
-    height: auto;
-    padding-top: 20%;
-    position: relative;
-    margin: auto;
-}
-
-/* Images contained within slideshow */
-.Slide_Show_Images {
-    vertical-align: middle;
-    height: auto;
-    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
-    width: auto;
-}
-
-
-/* Next and previous buttons */
-.Previous, .Next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: -0vw;
-    color: darkgray;
-    font-weight: bold;
-    font-size: 1.5vw;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    transition: 0.6s ease;
-}
-
-/* Positioning the right-hand next button */
-.Next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* Hover effect on slide show buttons */
-.Previous:hover, .Next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-}
-
-/* Slideshow text */
-.text {
-    color: white;
-    padding: 1vw;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-family: Perpetua, Rockwell Extra Bold;
-    letter-spacing: .1vw;
-    font-size: 1.5vw;
-    background-color: rgba(0,0,0,0.75);
-    font-weight: bold;
-    border-radius: 7px 7px 7px 7px;
-}
-
-/* Number text (1/6, 2/6, etc.) - we have set this display to none, which means these are hidden */
-.Slide_Number {
-    color: white;
-    position: absolute;
-    top: 0;
-    font-family: Perpetua, Rockwell Extra Bold;
-    letter-spacing: .1vw;
-    font-size: 1.5vw;
-    font-weight: bold;
-    display: none;
-}
-
-/* The dots under the slideshow */
-.dot {
-    cursor: pointer;
-    height: 1vw;
-    width: 1vw;
-    margin: .25vw;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    position: relative;
-    z-index: 1;
-}
-
-/* Hover effect for slideshow dots */
-.active, .dot:hover {
-    background-color: black;
-}
-
-/* Fading animation for slideshow */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
 }
 
 /*styling for the image at the top of the webpage*/
@@ -223,12 +48,12 @@ body {
 	border-width: 3px;
 	border-radius: 10px;
 	border-color: darkgray;
->>>>>>> Stashed changes
 }
 
 /*styling for the text throughout the website*/
 #portfolio-text {
-	font-size: 14pt;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 11pt;
 	line-height: 20pt;
 	margin-right: 40px;
 	margin-left: 40px;
@@ -250,6 +75,24 @@ body {
 	margin-bottom: 30px;
 }
 
+/*styling for the Github images*/
+.logo-image1 {
+	height: 20%;
+	width: 20%;
+	border-style: groove;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: lightgray;
+}
+
+/*effect when user hovers mouse over the Discography images*/
+.logo-image1:hover {
+	width: 25%;
+	height: 25%;
+	-webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
 /*custom span classes that serves as line breaks with a specific height*/
 .break1 {
 	display: block;
@@ -259,8 +102,6 @@ body {
 .break2 {
 	display: block;
 	margin-bottom: 30px;
-<<<<<<< Updated upstream
-=======
 }
 /* --------------NEW STUFF ADDED HERE---------------------------- */
 .Menu{
@@ -312,9 +153,6 @@ body {
     color: #fff;
 }
 
-/*IMAGE-RELATED STYLING SECTION*/
-/*===============================================================================================================*/
-
 .photo {
 	position: relative;
 	line-height: 0;
@@ -340,51 +178,6 @@ body {
 	height: 169px;
 }
 
-/*styling for the div container holding the image at the top of the webpage*/
-#heading {
-	text-align: center;
-	padding-top: 80px;
-}
-
-/*styling for the image at the top of the webpage*/
-#title-image {
-	height: 20%;
-	width: 20%;
-	border-style: groove;
-	border-width: 3px;
-	border-radius: 10px;
-	border-color: darkgray;
-}
-
-/*styling for the container that will hold all the images in the projects section in a horizontal row*/
-.row {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-right: -15px;
-	margin-left: -15px
-}
-
-/*styling for the Github images*/
-.logo-image1 {
-	height: 20%;
-	width: 20%;
-	border-style: groove;
-	border-width: 5px;
-	border-radius: 10px;
-	border-color: lightgray;
-}
-
-/*effect when user hovers mouse over the Github images*/
-.logo-image1:hover {
-	width: 25%;
-	height: 25%;
-	-webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-
 .photo-overlay {
 	color: #fff;
 	position: absolute;
@@ -399,43 +192,7 @@ body {
 	background: rgba(0,0,0, .5);
 }
 
-/*END OF IMAGE STYLING SECTION*/
-/*===============================================================================================================*/
-
-.container {
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto
-}
-
-@media (min-width:576px) {
-	.container {
-		max-width: 540px
-	}
-}
-
-@media (min-width:768px) {
-	.container {
-		max-width: 720px
-	}
-}
-
-@media (min-width:992px) {
-	.container {
-		max-width: 960px
-	}
-}
-
-@media (min-width:1200px) {
-	.container {
-		max-width: 1140px
-	}
-}
-
 .white-head {
 	color: #C9BDAA;
 	margin-top: 5%;
->>>>>>> Stashed changes
 }
