@@ -10,3 +10,7 @@ function OpenLinkedIn() {
 	window.open("https://www.linkedin.com/in/levi-blodgett-software/");
 }
 
+/*function that opens the Tech Academy website in a new tab*/
+function OpenTechAcademy() {
+	window.open("https://www.learncodinganywhere.com/");
+}
