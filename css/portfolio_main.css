@@ -21,15 +21,6 @@ body {
 	z-index: 1; /*This ensures other elements don't display over the navbar */
 	border-style: groove;
 	border-width: 3px;
-}
-
-/*navbar hover effect*/
-#portfolio-nav a:hover {
-	background-color: darkgray;
-	box-shadow: -6px 6px 10px #333333; /* adds a drop shadow to each element of the navbar when the cursor hovers over it */
-}
-/*styling for the navbar*/
-.portfolio-nav { 
 	color: #212529;
 	position: relative;
 	display: flex;
@@ -54,12 +45,7 @@ body {
 	transform: rotate(15deg);
 	animation-duration: 0ms;
 }
-/*navbar hover effect*/
-.portfolio-nav a:hover {/* adds a drop shadow to each element of the navbar when the cursor hovers over it */
-	cursor: pointer;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-}
+
 
 /*styling for the text throughout the website*/
 #portfolio-text {
