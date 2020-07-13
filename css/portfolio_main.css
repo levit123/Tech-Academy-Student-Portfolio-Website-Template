@@ -16,7 +16,6 @@ body {
 
 /*navbar at the top of the site*/
 .portfolio-nav {
-	overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
 	position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
 	top: 0; /* This ensures no space is displayed above the navbar */
 	z-index: 1; /*This ensures other elements don't display over the navbar */
@@ -106,6 +105,7 @@ body {
     margin: 0;
 }
 
+/*NOTE: "Live Projects" dropdown item has the word "Projects" not centered correctly*/
 .Menu li{
     color: #B3B3B3;
     display: inline-block;
