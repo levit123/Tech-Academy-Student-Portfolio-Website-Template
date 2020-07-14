@@ -91,7 +91,7 @@ body {
     margin: 0;
 }
 
-/*NOTE: "Live Projects" dropdown item has the word "Projects" not centered correctly*/
+/*NOTE: "Live Projects" dropdown item has the word "Projects" not centered correctly, needs to be fixed*/
 .Menu li{
     color: #B3B3B3;
     display: inline-block;
@@ -101,6 +101,7 @@ body {
     cursor: pointer;
 }
 
+/*hover effect for the navbar menu items*/
 .Menu li:hover{
     color: #fff;
 }

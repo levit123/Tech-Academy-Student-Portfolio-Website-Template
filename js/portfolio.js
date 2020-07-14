@@ -13,43 +13,19 @@ function OpenLinkedIn() {
 /*function that opens the Tech Academy website in a new tab*/
 function OpenTechAcademy() {
   window.open("https://www.learncodinganywhere.com/");
-}
+}sss
 
+/*function that opens your first favorite project on Github in a new tab*/
 function OpenProject(){
- window.open("Project1.html");
+ window.open("https://github.com/levit123/MVC_CarInsurance_CodeFirst");
 }
 
+/*function that opens your second favorite project on Github in a new tab*/
 function OpenProject2(){
-	window.open("Project2.html");
+	window.open("https://github.com/levit123/Basic-Python-Projects/tree/master/Tkinter%20GUI");
 }
 
+/*function that opens your third favorite project on Github in a new tab*/
 function OpenProject3(){
-window.open("Project3.html");
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+window.open("https://github.com/levit123/Basic-Python-Projects/tree/master/Django%20Test%20Project/src");
 }
