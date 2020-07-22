@@ -30,7 +30,7 @@ body {
 }
 
 /*styling for the click-able anchor elements in the navbar*/
-.portfolio-nav a {
+.portfolio-nav  a{
 	font: bold 18px sans-serif;
 	text-decoration: none;
 	background-color: transparent;
@@ -341,4 +341,9 @@ body {
 .white-head {
 	color: #C9BDAA;
 	margin-top: 5%;
+}
+/* Footer element */
+footer {
+	padding: 2%;
+	background-color:rgb(75, 73, 73);
 }
