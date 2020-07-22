@@ -1,3 +1,7 @@
+/*===============================================================================================================*/
+/*GENERAL/MISC STYLING SECTION*/
+/*===============================================================================================================*/
+
 /*general styling for the overall webpages*/
 html {
     scroll-behavior: smooth;
@@ -7,12 +11,99 @@ body {
 	margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
 }
 
+/*custom span classes that serves as line breaks with a specific height*/
+.break1 {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.break2 {
+	display: block;
+	margin-bottom: 30px;
+}
+
 /*styling for the <h3> elements with this class*/
 .portfolio-section-header {
 	font: bold 22px sans-serif;
 	font-size: 2.50rem;
 	text-align: center;
 }
+
+/*styling for the text throughout the website*/
+#portfolio-text {
+	font-size: 18pt;
+	line-height: 20pt;
+	margin-right: 40px;
+	margin-left: 40px;
+	text-align: center;
+}
+
+/*div that acts as a visual box to hold/seperate parts of the webpage*/
+.box {
+	background-color: lightgray;
+	padding: 10px;
+	align-content: center;
+	border-style: groove;
+	border-width: 3px;
+	border-radius: 10px;
+	border-color: darkgray;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*styling for the <div> container that is used for multiple sections throughout the site*/
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width:576px) {
+	.container {
+		max-width: 540px
+	}
+}
+
+@media (min-width:768px) {
+	.container {
+		max-width: 720px
+	}
+}
+
+@media (min-width:992px) {
+	.container {
+		max-width: 960px
+	}
+}
+
+@media (min-width:1200px) {
+	.container {
+		max-width: 1140px
+	}
+}
+
+.white-head {
+	color: #C9BDAA;
+	margin-top: 5%;
+}
+
+/* styling for the footer at the bottom of the page */
+footer {
+	padding: 2%;
+	background-color:rgb(75, 73, 73);
+}
+
+/*===============================================================================================================*/
+/*END OF GENERAL/MISC STYLING SECTION*/
+/*===============================================================================================================*/
+
+/*===============================================================================================================*/
+/*NAVBAR STYLING SECTION*/
+/*===============================================================================================================*/
 
 /*navbar at the top of the site*/
 .portfolio-nav {
@@ -30,7 +121,7 @@ body {
 }
 
 /*styling for the click-able anchor elements in the navbar*/
-.portfolio-nav  a{
+.portfolio-nav  a {
 	font: bold 18px sans-serif;
 	text-decoration: none;
 	background-color: transparent;
@@ -40,49 +131,15 @@ body {
 	font-size: 1.5rem;
 	color: #fff;
 }
+
 /*Navbar anchor item animation when mouse is clicked and held down*/
-.portfolio-nav a:active{
+.portfolio-nav a:active {
 	transform: rotate(15deg);
 	animation-duration: 0ms;
 }
 
-
-/*styling for the text throughout the website*/
-#portfolio-text {
-	font-size: 18pt;
-	line-height: 20pt;
-	margin-right: 40px;
-	margin-left: 40px;
-	text-align: center;
-}
-
-/*div that acts as a visual box to hold parts of the elements of the webpage*/
-.box {
-	background-color: lightgray;
-	padding: 10px;
-	align-content: center;
-	border-style: groove;
-	border-width: 3px;
-	border-radius: 10px;
-	border-color: darkgray;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-/*custom span classes that serves as line breaks with a specific height*/
-.break1 {
-	display: block;
-	margin-bottom: 20px;
-}
-
-.break2 {
-	display: block;
-	margin-bottom: 30px;
-}
-/* --------------NEW STUFF ADDED HERE---------------------------- */
-.Menu{
+/*styling for the <ul> that contains the items in the navbar*/
+.Menu {
     font: bold 14px sans-serif; /*what is the purpose of this? */
     text-align: center;
     list-style: none;
@@ -91,7 +148,7 @@ body {
     margin: 0;
 }
 
-/*NOTE: "Live Projects" dropdown item has the word "Projects" not centered correctly, needs to be fixed*/
+/*styling for the navbar menu items*/
 .Menu li{
     color: #B3B3B3;
     display: inline-block;
@@ -106,33 +163,48 @@ body {
     color: #fff;
 }
 
+/*hover effect for the list items in the navbar*/
 .Menu li:hover ul{
     display: block;
     opacity: 1;
     visibility: visible;
 }
 
+/*styling for the navbar dropdown submenu, which holds the anchor link to the Live Projects page*/
 .subMenu {
     padding: 0;
     left: 0;
-    position: absolute;
     top: 43.5px;
     width: 125.5px;
     opacity: 0;
 	visibility: hidden;
 	border-radius: 2px;
+	position: absolute;
+	margin-left: 10%;
 }
 
-.subMenu li{
+/*styling for the list item in the navbar dropdown submenu*/
+.subMenu li {
     background-color: #343a40;
-    display: block;
     color: #B3B3B3;
+    text-align: center;
 }
 
+/*hover effect for the list item in the navbar dropdown submenu*/
 .subMenu li:hover{
     color: #fff;
 }
 
+/*styling for the anchor element in the navbar dropdown submenu, which, when clicked, opens a link to the Live Projects page*/
+.subMenu li a {
+	font: bold 16px sans-serif;
+}
+
+/*===============================================================================================================*/
+/*END OF NAVBAR STYLING SECTION*/
+/*===============================================================================================================*/
+
+/*===============================================================================================================*/
 /*CONTACT FORM STYLING SECTION*/
 /*===============================================================================================================*/
 
@@ -179,6 +251,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+/*hover effect for the <input> elements in the contact form*/
 .contact-form-container input[type="text"]:hover {
 	box-shadow: 0 0 18px rgba(100,65,0,.8);
 }
@@ -202,6 +275,7 @@ body {
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 
+/*hover effect for the submit button in the contact form*/
 .submit input[type="submit"]:hover {
 	color: #000;
 	background-color: #8D8E8F;
@@ -216,6 +290,15 @@ body {
 /*IMAGE-RELATED STYLING SECTION*/
 /*===============================================================================================================*/
 
+/*styling for the <div> that holds the internal "photo" <div>*/
+.photo-container {
+	text-align: center;
+	margin: 15px auto;
+	width: 300px;
+    height: 169px;
+}
+
+/*styling for the internal <div>, which holds images on the projects pages*/
 .photo {
 	position: relative;
 	line-height: 0;
@@ -228,28 +311,20 @@ body {
 	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
 }
 
-/*styling for the container holding the images*/
-.photo-container {
-	text-align: center;
-	margin: 15px auto;
-	width: 300px;
-    height: 169px;
-}
-
-/*styling for the <img> image elements*/
+/*styling for the <img> image elements inside the "photo-container" <div>*/
 .photo-container img {
  	max-width: 100%;
 	width: 300px;
 	height: 169px;
 }
 
-/*styling for the div container holding the image at the top of the webpage*/
+/*styling for the <div> container holding the image at the top of the webpage*/
 #heading {
 	text-align: center;
 	padding-top: 80px;
 }
 
-/*styling for the image at the top of the webpage*/
+/*styling for the image at the top of the webpage, which is held inside the "heading" <div>*/
 #title-image {
 	height: 20%;
 	width: 20%;
@@ -288,6 +363,7 @@ body {
     transition-duration: 0.2s;
 }
 
+/*styling for the <div> that holds the images and links to the projects on your Github*/
 .photo-overlay {
 	color: #fff;
 	position: absolute;
@@ -303,47 +379,5 @@ body {
 }
 
 /*===============================================================================================================*/
-/*END OF IMAGE STYLING SECTION*/
+/*END OF IMAGE-RELATED STYLING SECTION*/
 /*===============================================================================================================*/
-
-.container {
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@media (min-width:576px) {
-	.container {
-		max-width: 540px
-	}
-}
-
-@media (min-width:768px) {
-	.container {
-		max-width: 720px
-	}
-}
-
-@media (min-width:992px) {
-	.container {
-		max-width: 960px
-	}
-}
-
-@media (min-width:1200px) {
-	.container {
-		max-width: 1140px
-	}
-}
-
-.white-head {
-	color: #C9BDAA;
-	margin-top: 5%;
-}
-/* Footer element */
-footer {
-	padding: 2%;
-	background-color:rgb(75, 73, 73);
-}
